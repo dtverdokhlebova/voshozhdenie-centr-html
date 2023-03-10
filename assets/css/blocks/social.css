@@ -1,0 +1,24 @@
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+@media (max-width: 767px) {
+  .social {
+    gap: 12px;
+  }
+}
+.social__item {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 35px;
+}
+@media (max-width: 767px) {
+  .social__item {
+    width: 28px;
+  }
+}
+.social__item img {
+  display: block;
+}

@@ -1,0 +1,40 @@
+.popup *:focus {
+  outline: none !important;
+}
+.popup-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 685px;
+  padding: 70px 85px 55px 50px;
+  color: #2f2e2a;
+  background-color: #fff;
+  border-radius: 0;
+}
+@media (max-width: 767px) {
+  .popup-wrapper {
+    padding: 55px 20px 40px;
+  }
+}
+.popup .fancybox__slide {
+  padding: 10px;
+}
+.popup .carousel__button.is-close {
+  position: absolute;
+  top: 34px;
+  right: 34px;
+  width: 28px;
+  height: 28px;
+  color: #494949;
+}
+@media (max-width: 767px) {
+  .popup .carousel__button.is-close {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+}
+.popup .carousel__button.is-close svg {
+  -webkit-filter: none;
+  filter: none;
+}

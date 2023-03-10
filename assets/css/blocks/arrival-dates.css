@@ -1,0 +1,55 @@
+.arrival-dates {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px 10px;
+}
+@media (max-width: 1680px) {
+  .arrival-dates {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1380px) {
+  .arrival-dates {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .arrival-dates {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .arrival-dates {
+    grid-template-columns: repeat(2, min(100%, 460px));
+    margin: 0 calc(var(--inner-pd) * -1);
+    padding-bottom: 20px;
+    overflow-x: scroll;
+  }
+  .arrival-dates::-webkit-scrollbar {
+    background: transparent;
+  }
+  .arrival-dates::-webkit-scrollbar-thumb {
+    background: #bababa;
+    border-radius: 2px;
+  }
+}
+.arrival-dates__item {
+  padding: 20px;
+  font: 20px/1.4 "Century Gothic", "Arial", sans-serif;
+  text-align: center;
+  background: rgba(217, 217, 217, 0.21);
+  border-radius: 5px;
+}
+@media (max-width: 1380px) {
+  .arrival-dates__item {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .arrival-dates__item {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 0;
+  }
+}

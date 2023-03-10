@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Sweet Mavka Script';
+    src: url('SweetMavkaScript.eot');
+    src: url('SweetMavkaScript.eot?#iefix') format('embedded-opentype'),
+        url('SweetMavkaScript.woff2') format('woff2'),
+        url('SweetMavkaScript.woff') format('woff'),
+        url('SweetMavkaScript.ttf') format('truetype'),
+        url('SweetMavkaScript.svg#SweetMavkaScript') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

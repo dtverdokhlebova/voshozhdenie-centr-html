@@ -1,0 +1,63 @@
+.video-review__head {
+  margin-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 1380px) {
+  .video-review__head {
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 767px) {
+  .video-review__head {
+    margin-bottom: 25px;
+  }
+}
+.video-review__ui-h2:not(:last-child) {
+  margin-bottom: 35px;
+}
+@media (max-width: 767px) {
+  .video-review__ui-h2:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+.video-review__descr {
+  max-width: 490px;
+  margin: 0 auto;
+  font: 18px/1.16 "Century Gothic", "Arial", sans-serif;
+}
+@media (max-width: 767px) {
+  .video-review__descr {
+    font-size: 16px;
+  }
+}
+.video-review__main {
+  position: relative;
+  max-width: 1270px;
+  margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .video-review__main {
+    margin: 0 calc(var(--inner-pd) * -1);
+  }
+}
+.video-review__main::before {
+  content: "";
+  display: block;
+  padding-top: 55%;
+}
+@media (max-width: 767px) {
+  .video-review__main::before {
+    padding-top: 60%;
+  }
+}
+.video-review__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-review__wrapper iframe {
+  width: 100%;
+  height: 100%;
+}

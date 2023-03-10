@@ -1,0 +1,118 @@
+.offers {
+  padding: 140px 0 130px;
+  text-align: center;
+  color: #fff;
+  background-image: url("../../img/offers_bg.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1380px) {
+  .offers {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  .offers {
+    padding: 75px 0;
+  }
+}
+@media (max-width: 540px) {
+  .offers {
+    padding: 0;
+    color: #343232;
+    background: none;
+  }
+}
+.offers__ui-h2 {
+  margin-bottom: 155px;
+}
+@media (max-width: 1380px) {
+  .offers__ui-h2 {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .offers__ui-h2 {
+    margin-bottom: 70px;
+  }
+}
+.offers__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+@media (max-width: 1380px) {
+  .offers__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .offers__wrapper {
+    gap: 50px;
+  }
+}
+@media (max-width: 540px) {
+  .offers__wrapper {
+    grid-template-columns: 1fr;
+    width: 90%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 1380px) {
+  .offers__item {
+    max-width: 400px;
+  }
+}
+.offers__icon {
+  width: 93px;
+  height: 93px;
+  margin: 0 auto 10px;
+}
+@media (max-width: 540px) {
+  .offers__icon {
+    margin-bottom: 15px;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
+}
+.offers__title {
+  font: 500 35px/1.05 "Sweet Mavka Script", "Arial", sans-serif;
+  letter-spacing: 0.055em;
+}
+@media (max-width: 1380px) {
+  .offers__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .offers__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 540px) {
+  .offers__title {
+    font: 700 20px/1.2 "Century Gothic", "Arial", sans-serif;
+  }
+}
+.offers__title:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 540px) {
+  .offers__title:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.offers__descr {
+  font: 400 18px/1.2 "Century Gothic", "Arial", sans-serif;
+}
+@media (max-width: 767px) {
+  .offers__descr {
+    font-size: 16px;
+  }
+}

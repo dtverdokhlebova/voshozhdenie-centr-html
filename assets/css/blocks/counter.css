@@ -1,0 +1,51 @@
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px;
+}
+.counter__input {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 70px;
+  height: 50px;
+  padding: 4px;
+  font: 18px/1.22 "Century Gothic", "Arial", sans-serif;
+  text-align: center;
+  background: #efefef;
+  border: 0;
+  border-radius: 13px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  -moz-appearance: textfield;
+}
+.counter__input::-webkit-inner-spin-button, .counter__input::-webkit-outer-spin-button {
+  display: none;
+}
+@media (max-width: 767px) {
+  .counter__input {
+    width: 62px;
+    height: 42px;
+    font-size: 16px;
+  }
+}
+.counter__btn {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+.counter__btn--minus {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12H24' stroke='%2314BCCC' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
+.counter__btn--plus {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 12H24' stroke='%2314BCCC' stroke-width='2'/%3E%3Cpath d='M12 24L12 -3.57628e-07' stroke='%2314BCCC' stroke-width='2'/%3E%3C/svg%3E%0A");
+}
